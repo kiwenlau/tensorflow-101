@@ -14,7 +14,7 @@ def predict(model):
 
     predictions = model(predict_dataset)
 
-    print "\n预测结果:"
+    print "\n预测:"
     for i, logits in enumerate(predictions):
         class_idx = tf.argmax(logits).numpy()
         name = class_ids[class_idx]

@@ -19,7 +19,7 @@ def test(model):
         prediction = tf.argmax(model(x), axis=1, output_type=tf.int32)
         test_accuracy(prediction, y)
 
-    print "\n测试结果:"
+    print "\n测试:"
     print("Test set accuracy: {:.3%}".format(test_accuracy.result()))
 
     return
